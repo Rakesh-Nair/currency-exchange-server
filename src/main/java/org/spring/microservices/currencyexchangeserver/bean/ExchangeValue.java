@@ -15,7 +15,7 @@ public class ExchangeValue {
 	@Column(name = "currency_to")
 	private String to;
 	private BigDecimal conversionMultiple;
-	private int port;
+	private String environment;
 
 	public ExchangeValue() {
 		super();
@@ -86,17 +86,17 @@ public class ExchangeValue {
 	}
 
 	/**
-	 * @return the port
+	 * @return the environment
 	 */
-	public int getPort() {
-		return port;
+	public String getEnvironment() {
+		return environment;
 	}
 
 	/**
-	 * @param port the port to set
+	 * @param environment the environment to set
 	 */
-	public void setPort(int port) {
-		this.port = port;
+	public void setEnvironment(String environment) {
+		this.environment = environment;
 	}
 
 }
