@@ -17,7 +17,7 @@ public class CircuitBreakerController {
 
 	@GetMapping("/sample-api")
 	// @Retry(name = "sample-api", fallbackMethod = "hardCodedResponse")
-	@CircuitBreaker(name = "default", fallbackMethod = "hardCodedResponse")
+	//@CircuitBreaker(name = "default", fallbackMethod = "hardCodedResponse")
 	@RateLimiter(name = "default")
 	public String sampleApi() {
 		logger.info("Sample API call received");
